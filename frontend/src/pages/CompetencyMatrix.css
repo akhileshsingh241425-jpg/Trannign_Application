@@ -1,0 +1,17 @@
+.row-pass {
+  background-color: #f6ffed !important;
+}
+
+.row-retraining {
+  background-color: #fff7e6 !important;
+}
+
+.row-fail {
+  background-color: #fff1f0 !important;
+}
+
+.row-pass:hover,
+.row-retraining:hover,
+.row-fail:hover {
+  filter: brightness(0.95);
+}

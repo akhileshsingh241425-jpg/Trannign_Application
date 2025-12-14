@@ -1,0 +1,40 @@
+.trainer-dashboard {
+  padding: 24px;
+}
+
+.trainer-dashboard .header-card {
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.trainer-dashboard .header-card h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.trainer-dashboard .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.trainer-dashboard .ant-statistic-content {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.trainer-dashboard .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trainer-dashboard .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.trainer-dashboard label {
+  font-weight: 500;
+  color: #333;
+}

@@ -1,0 +1,214 @@
+.dashboard {
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+  min-height: 100vh;
+}
+
+.header-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 0;
+  padding: 50px 40px;
+  margin-bottom: 0;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+}
+
+.stat-card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.flow-chart-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border: none;
+  overflow: hidden;
+}
+
+.flow-chart-card .ant-card-head {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 24px 32px;
+}
+
+.flow-chart-card .ant-card-head-title {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.flow-chart-card .ant-card-body {
+  padding: 32px;
+}
+
+.ant-steps-item-icon {
+  width: 48px !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  font-size: 24px !important;
+  border-width: 2px !important;
+}
+
+.ant-steps-item-title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #2c3e50 !important;
+  margin-top: 8px !important;
+}
+
+.ant-steps-item-description {
+  font-size: 15px !important;
+  color: #5a6c7d !important;
+  padding-top: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.ant-steps-item-description .ant-typography {
+  font-size: 15px !important;
+  margin-bottom: 12px !important;
+}
+
+.ant-steps-item-description .ant-typography-secondary {
+  font-size: 14px !important;
+  padding-left: 20px !important;
+  display: block;
+  margin-bottom: 6px !important;
+  position: relative;
+}
+
+.ant-steps-item-description .ant-typography-secondary:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #52c41a;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.procedure-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.procedure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.procedure-card .ant-card-head {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: none;
+  padding: 20px 24px;
+}
+
+.procedure-card .ant-card-head-title {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.procedure-card .ant-card-body {
+  padding: 24px;
+}
+
+.topics-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.topics-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.topics-card .ant-card-head {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  padding: 20px 24px;
+}
+
+.topics-card .ant-card-head-title {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.topics-card .ant-card-body {
+  padding: 24px;
+}
+
+.ant-timeline-item-head {
+  background: transparent !important;
+  border-width: 3px !important;
+}
+
+.ant-timeline-item-content {
+  margin-top: 4px;
+}
+
+.timeline-item-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.timeline-content {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #5a6c7d;
+}
+
+.audit-card {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe7ba 100%);
+  border: 3px solid #ffa940;
+  box-shadow: 0 8px 20px rgba(255, 169, 64, 0.25);
+  padding: 32px;
+}
+
+.audit-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d46b08;
+}
+
+.audit-description {
+  font-size: 16px;
+  color: #ad6800;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+.ant-statistic-title {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #5a6c7d !important;
+}
+
+.ant-statistic-content {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
