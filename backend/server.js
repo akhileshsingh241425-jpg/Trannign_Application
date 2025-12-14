@@ -1,8 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import sequelize from './config/database.js';
 import db from './models/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Destructure models
 const { Employee } = db;
@@ -36,9 +41,19 @@ app.use('/api/auth', authRoutes);
 app.post('/api/generate-dummy-data', generateDummyData);
 app.post('/api/restart-system', restartSystem);
 
+// Serve static files from frontend build
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'HR Training System API is running' });
+});
+
+// Catch all route - serve index.html for any route not handled by API
+app.get('*', (req, res) => {
+  if (!req.path.startsWith('/api')) {
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+  }
 });
 
 // Database sync and server start
